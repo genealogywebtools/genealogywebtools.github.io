@@ -14,15 +14,30 @@
     }
 
     header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       background-color: #30507D;
       color: white;
-      padding: 1.5rem;
-      text-align: center;
+      padding: 1rem 2rem;
+      flex-wrap: wrap;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-container img {
+      height: 48px;
+      width: 48px;
+      margin-right: 1rem;
+      border-radius: 8px;
     }
 
     h1 {
-      margin: 0.5rem 0;
-      font-size: 2rem;
+      margin: 0;
+      font-size: 1.8rem;
     }
 
     nav a {
@@ -65,17 +80,18 @@
     }
 
     @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
       nav a {
         display: block;
         margin: 0.5rem 0;
       }
 
-      header {
-        padding: 1rem;
-      }
-
       h1 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
       }
     }
   </style>
@@ -83,10 +99,13 @@
 <body>
 
   <header>
-    <h1>Genealogy Web Tools</h1>
+    <div class="logo-container">
+      <img src="GenealogyWebTools.jpg" alt="GenealogyWebTools logo" />
+      <h1>Genealogy Web Tools</h1>
+    </div>
     <nav>
       <a href="https://github.com/GenealogyWebTools">GitHub</a>
-      <a href="https://github.com/GenealogyWebTools/smart-gedcom-viewer">Smart GEDCOM Viewer</a>
+      <a href="https://github.com/GenealogyWebTools/smart-gedcom-viewer">Viewer</a>
       <a href="https://github.com/GenealogyWebTools/smart-gedcom-viewer/wiki">Wiki</a>
     </nav>
   </header>
