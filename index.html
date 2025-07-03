@@ -1,12 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Genealogy Web Tools</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #30507D;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0.5rem 0;
+      font-size: 2rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-top: 2rem;
+    }
+
+    .project {
+      background: #eef2f8;
+      padding: 1rem;
+      border-left: 5px solid #30507D;
+      margin-bottom: 1.5rem;
+    }
+
+    .project h2 {
+      margin-top: 0;
+      color: #30507D;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      margin: 3rem 0 1rem 0;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+
+      header {
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to Genealogy Web Tools</h1>
-  <p>This site hosts open source tools for visualizing and analyzing GEDCOM genealogy files.</p>
-  <p>Project: <a href="https://github.com/GenealogyWebTools/smart-gedcom-viewer">Smart GEDCOM Viewer</a></p>
+
+  <header>
+    <h1>Genealogy Web Tools</h1>
+    <nav>
+      <a href="https://github.com/GenealogyWebTools">GitHub</a>
+      <a href="https://github.com/GenealogyWebTools/smart-gedcom-viewer">Smart GEDCOM Viewer</a>
+      <a href="https://github.com/GenealogyWebTools/smart-gedcom-viewer/wiki">Wiki</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project">
+      <h2>Smart GEDCOM Viewer</h2>
+      <p>
+        A lightweight, browser-based tool to explore, analyze and visualize GEDCOM genealogy files without installing anything.
+        Developed in JavaScript and designed for privacy: all processing is done locally.
+      </p>
+      <p>
+        <strong>Features:</strong><br/>
+        • Client-side viewer (no server needed)<br/>
+        • Visual family tree with jsTree<br/>
+        • Detail panel for individuals, notes, media<br/>
+        • Supports GEDCOM 5.5.1 standard<br/>
+        • Designed for tablets and desktop use
+      </p>
+      <p>
+        👉 <a href="https://github.com/GenealogyWebTools/smart-gedcom-viewer" target="_blank">View the project on GitHub</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>About GenealogyWebTools</h2>
+      <p>
+        This GitHub organization hosts open-source tools for genealogists, hobbyists, and archivists who want to work with GEDCOM files in a modern, secure, and user-friendly environment.
+        Our tools are fully client-side and respect your data privacy.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 GenealogyWebTools — Made with passion for open family history
+  </footer>
+
 </body>
 </html>
